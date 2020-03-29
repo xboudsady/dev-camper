@@ -1,0 +1,27 @@
+{
+  "name": "dev-camper",
+  "version": "1.0.0",
+  "description": "Devcamper backend API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xboudsady/dev-camper.git"
+  },
+  "keywords": [
+    "nodejs"
+  ],
+  "author": "Xayaseth Boudsady",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xboudsady/dev-camper/issues"
+  },
+  "homepage": "https://github.com/xboudsady/dev-camper#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "i": "^0.3.6"
+  }
+}
