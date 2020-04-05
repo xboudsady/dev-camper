@@ -49,8 +49,6 @@ exports.createBootcamp = async (req, res, next) => {
     } catch (err) {
         next(err);
     }
-    
-    
 };
 
 // @desc    Update new botcamp
