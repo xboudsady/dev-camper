@@ -29,7 +29,7 @@ const importData = async () => {
 
         console.log('Data Imported...'.green.inverse);
         process.exit();
-    } catch (error) {
+    } catch (err) {
         console.error(err);
     }
 }
@@ -41,12 +41,12 @@ const deleteData = async () => {
 
         console.log('Data Destroyed...'.red.inverse);
         process.exit();
-    } catch (error) {
+    } catch (err) {
         console.error(err);
     }
 }
 
-// start server node seeder -i
+// start server:: node seeder -i
 if (process.argv[2] === '-i') {
     importData();
 } else if (process.argv[2] === '-d') {
