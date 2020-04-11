@@ -25,9 +25,21 @@ const bootcamps = JSON.parse(
 // Import into DB
 const importData = async () => {
     try {
-        await bootcamps.create(bootcamps);
+        await Bootcamps.create(bootcamps);
 
         console.log('Data Imported...'.green.inverse);
+        process.exit();
+    } catch (error) {
+        console.error(err);
+    }
+}
+
+// Delete data
+const deleteData = async () => {
+    try {
+        await Bootcamps.deleteMany();
+
+        console.log('Data Destroyed...'.red.inverse);
         process.exit();
     } catch (error) {
         console.error(err);
