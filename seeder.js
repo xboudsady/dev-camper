@@ -45,3 +45,10 @@ const deleteData = async () => {
         console.error(err);
     }
 }
+
+// start server node seeder -i
+if (process.argv[2] === '-i') {
+    importData();
+} else if (process.argv[2] === '-d') {
+    deleteData();
+}
